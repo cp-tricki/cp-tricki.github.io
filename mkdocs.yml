@@ -1,0 +1,14 @@
+site_name: CP-Tricki
+site_url: https://cp-tricki.github.io/
+theme:
+  name: material
+  language: en
+  favicon: assets/vim.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.indexes
+plugins:
+  - search:
+      lang: en
