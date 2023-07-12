@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"About","text":"<p>CP-Tricki is a collection of tricks for competitive programming inspired by Tricki. If you want to contribute, read the repository description.</p> <p>This line was added from another account to test author system.</p>"}]}
