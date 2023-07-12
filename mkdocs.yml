@@ -5,9 +5,19 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides
-  palette:
-    primary: brown
-    accent: amber
+  palette: 
+  - scheme: default
+    primary: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+
+
+  - scheme: slate
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+    
   features:
     - navigation.instant
     - navigation.tabs
