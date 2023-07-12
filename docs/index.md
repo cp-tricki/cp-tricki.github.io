@@ -41,12 +41,16 @@ To insert subheadings, put `## HTML h2 heading`, `### HTML h3 heading`, `#### HT
 ### Math
 To add math, use `\( n^2 = -1 \)` inline. This will render as \( n^2 = -1 \). To put a formula in a separate block, use 
 ```
+blank line
 \[
 \int e^x dx = e^x + C
 \]
+blank line
 ```
 This will result in 
+
 \[
 \int e^x dx = e^x + C
 \]
+
 Note: GitHub's preview can display brackets incorrectly.
