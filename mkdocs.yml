@@ -35,6 +35,21 @@ plugins:
       branch: main
   - git-revision-date-localized:
       enable_creation_date: true
+  - toc-md:
+      toc_page_title: Contents
+      toc_page_description: Usage mkdocs-toc-md
+      header_level: 3
+      pickup_description_meta: false
+      pickup_description_class: false
+      output_path: index.md
+      output_log: false
+      ignore_page_pattern: index.*.md$
+      remove_navigation_page_pattern: index.*.md$
+      template_dir_path: custom_template
+      integrate_mkdocs_static_i18n: true
+      shift_header: after_h1_of_index
+      extend_module: true
+      output_comment: html
 
 
 markdown_extensions:
