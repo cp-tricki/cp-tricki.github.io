@@ -8,11 +8,6 @@ theme:
   custom_dir: docs/overrides
   edit_uri: edit/main/docs/
   
-  icon:
-    edit: material/pencil 
-    view: material/eye
-
-  
   palette: 
   - scheme: default
     primary: amber
