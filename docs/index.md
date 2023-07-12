@@ -1,6 +1,8 @@
 ---
 title: About
 ---
+![Build status](https://github.com/cp-tricki/cp-tricki.github.io/actions/workflows/ci.yml/badge.svg)
+
 CP-Tricki is a collection of tricks for competitive programming inspired by [Tricki](https://www.tricki.org/).
 
 ## Contributing
@@ -37,4 +39,13 @@ To break text on the page into paragraphs, simply leave a blank line between two
 To insert subheadings, put `## HTML h2 heading`, `### HTML h3 heading`, `#### HTML h4 heading` etc. on separate line. Using `# HTML h1 heading` is not recommended.
 
 ### Math
-To add math, use `\( n^2 = -1 \)` inline. This will render as \( n^2 = -1 \). To put a formula in a separate block, use `\[\int e^x dx = e^x + c\]`. This will result in \[ \int e^x dx = e^x + c \]. Note: GitHub's preview can display brackets inaccurately.
+To add math, use `$ n^2 = -1 $` inline. This will render as $ n^2 = -1 $. To put a formula in a separate block, use 
+```
+$$
+\int e^x dx = e^x + C
+$$
+```
+This will result in 
+$$
+\int e^x dx = e^x + C
+$$
