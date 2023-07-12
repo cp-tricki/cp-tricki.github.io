@@ -2,14 +2,12 @@
 
 {% block content %}
 {{ super() }}
-    <ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
-    <li class="contributors-holder">
+    <div class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
         <span class="contributors-text">Contributors:</span>
         <ul class="contributors" data-bi-name="contributors" style="list-style: none;">
         {%- for user in committers -%}
         <li><a href="{{ user.url }}" title="{{ user.name }}" data-bi-name="contributorprofile" target="_blank">{{ user.name }}</a></li>
         {%- endfor -%}
         </ul>
-    </li>
-    </ul>
+    </div>
 {% endblock %}
