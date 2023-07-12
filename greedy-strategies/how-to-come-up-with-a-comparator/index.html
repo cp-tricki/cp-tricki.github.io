@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#acknowledgements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -343,9 +348,80 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to come up with a comparator?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to come up with a comparator?
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#short-description" class="md-nav__link">
+    Short description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-description" class="md-nav__link">
+    General description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-a-tower-of-boxes" class="md-nav__link">
+    Example 1 (a tower of boxes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-this-cses-problem" class="md-nav__link">
+    Example 2 (this CSES problem).
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online Judges
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -376,6 +452,63 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#short-description" class="md-nav__link">
+    Short description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-description" class="md-nav__link">
+    General description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-a-tower-of-boxes" class="md-nav__link">
+    Example 1 (a tower of boxes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-this-cses-problem" class="md-nav__link">
+    Example 2 (this CSES problem).
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online Judges
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -403,13 +536,13 @@
 
   <h1>How to come up with a comparator?</h1>
 
-<p><strong>Acknowledgements.</strong></p>
+<h3 id="acknowledgements">Acknowledgements</h3>
 <p>We start from a simple trick, which was exposed by Sergei Kopeliovich at Winter Programming School in Kharkiv in 2013.</p>
-<p><strong>Short description.</strong></p>
+<h3 id="short-description">Short description</h3>
 <p>If it seems that a problem can be solved by an algorithm of the form: "arrange the objects in a suitable way and then work greedily", there is a general strategy to devise a comparator for this sort.</p>
-<p><strong>Prerequisites.</strong></p>
+<h3 id="prerequisites">Prerequisites</h3>
 <p>No specific knowledge is required, though familiarity with greedy algorithms would be useful.</p>
-<p><strong>General description</strong></p>
+<h3 id="general-description">General description</h3>
 <p><em>The auxiliary problem</em>: find an order that optimises a construction (that is the essential part of the considered problem) if it is known that such an order exists.</p>
 <p>We first consider a simplified problem, when only two objects exist, say <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>. Then our comparator should determine which order is better: <span class="arithmatex">\(AB\)</span> or <span class="arithmatex">\(BA\)</span>. To do so, we can normally introduce a penalty (or a cost) function <span class="arithmatex">\(f(A,B)\)</span> denoting the amount of penalty (or cost) we have if one takes object <span class="arithmatex">\(A\)</span> first and object <span class="arithmatex">\(B\)</span> second. Then our comparator chooses that order in which the penalty is minimal (or cost is maximal). If this comparator (relation) <span class="arithmatex">\(A\prec B\)</span> (which is <span class="arithmatex">\(A\prec B \iff penalty(A,B)&lt;penalty(B,A)\)</span> or <span class="arithmatex">\(cost(A,B)&gt;cost(B,A)\)</span>) is transitive (i.e. if <span class="arithmatex">\(A\prec B\)</span> and <span class="arithmatex">\(B\prec C\)</span> then <span class="arithmatex">\(A\prec C\)</span>) then after sorting all the objects with respect to it we shall obtain the <em>optimal</em> order.</p>
 <p><em>The main problem</em>: find a maximal-size subset that optimises a construction. (The difference from idea 1 is that we are not forced to take <em>all</em> elements.)</p>
@@ -423,16 +556,14 @@
 </li>
 </ol>
 <p>More generally one can write here a knapsack-like dp (if we have a subset we know the order by the auxiliary problem).</p>
-<p><strong>Example 1.</strong></p>
+<h3 id="example-1-a-tower-of-boxes">Example 1 (a tower of boxes)</h3>
 <p>Given <span class="arithmatex">\(n\)</span> boxes, each of which has its weight <span class="arithmatex">\(m_i\)</span> and the weight it can carry on the top <span class="arithmatex">\(a_i\)</span>, determine the size of the largest tower one can build. </p>
-<p><strong>Explanations.</strong></p>
 <p><strong>Step 1. Build a tower of all boxes.</strong> 
 In other words, we need to arrange the boxes in such a way that nothing breaks. Considering two distinct boxes, say <span class="arithmatex">\(i\)</span> and <span class="arithmatex">\(j\)</span>, we ask: when the order <span class="arithmatex">\((i,j)\)</span> is better than <span class="arithmatex">\((j,i)\)</span>? Obviously, that is when the excess of our carrying abilities is greater (that is when the total weight that we can additionally carry is greater). In other words, our cost function looks like this (here box <span class="arithmatex">\(j\)</span> stands on the top of <span class="arithmatex">\(i\)</span>): <span class="arithmatex">\(f(i, j) = \min(\)</span> total weight that can be still carried by box <span class="arithmatex">\(i\)</span>, total weight that can be still carried by <span class="arithmatex">\(j)\)</span>, i.e. <span class="arithmatex">\(f(i, j) = \min(a_i - m_j , a_j)\)</span>. Then we will build the tower in descending order of value.</p>
 <p><strong>Step 2. Build a max-size tower.</strong>
 Sort the boxes in the increasing order with respect to the comparator from Step 1. Take them greedily: if we can put the next box below the already built tower, we do it; otherwise, we ponder whether can we replace some of the boxes in the tower with our current one and decrease the weight the bottom box carries. </p>
-<p><strong>Example 2</strong> (<a href="https://cses.fi/problemset/task/2426">this CSES problem</a>).</p>
+<h3 id="example-2-this-cses-problem">Example 2 (<a href="https://cses.fi/problemset/task/2426">this CSES problem</a>).</h3>
 <p>Given <span class="arithmatex">\(n\)</span> people and their programmer skill (<span class="arithmatex">\(skill_1\)</span>) and artistic skill (<span class="arithmatex">\(skill_2\)</span>). We need to take exactly <span class="arithmatex">\(a\)</span> programmers and <span class="arithmatex">\(b\)</span> artists. Maximise total skill. </p>
-<p><strong>Explanations.</strong></p>
 <p><strong>Step 1. Take all people, at least <span class="arithmatex">\(a\)</span> programmers and at least <span class="arithmatex">\(b\)</span> artists.</strong> (<a href="https://www.eolymp.com/en/problems/182">this eolymp problem</a>)</p>
 <p>Applying to this problem, the cost (answer) of order <span class="arithmatex">\(AB\)</span> (take programmer skill of <span class="arithmatex">\(A\)</span> and artistique skill of <span class="arithmatex">\(B\)</span>) is <span class="arithmatex">\(skill_1(A) + skill_2(B)\)</span>, and the cost of order <span class="arithmatex">\(BA\)</span> (take the artistic skill of <span class="arithmatex">\(B\)</span> and programmer skill of <span class="arithmatex">\(A\)</span>) is <span class="arithmatex">\(skill_2(A) + skill_1(B)\)</span>. Then <span class="arithmatex">\(cost (AB) &gt; cost (BA)\)</span> is equivalent to <span class="arithmatex">\(skill_2(A) - skill_1(A) &lt; skill_2(B) - skill_1(A)\)</span> which we take as our comparator.</p>
 <p><strong>Step 2. Take exactly <span class="arithmatex">\(a\)</span> programmers and exactly <span class="arithmatex">\(b\)</span> artists.</strong></p>
@@ -445,7 +576,7 @@ Sort the boxes in the increasing order with respect to the comparator from Step 
 <li>(Replacing) <span class="arithmatex">\(\Delta_r\)</span>, = the change of answer if we take the maximal <span class="arithmatex">\(x\)</span> from the other people' and replace the worst (in terms of penalty) choice in (*).</li>
 </ul>
 <p><strong>4.</strong> Depending on which choice ("greedy" or "replacing) is better we change our sets.</p>
-<p><strong>Online Judges</strong></p>
+<h3 id="online-judges">Online Judges</h3>
 <ol>
 <li>https://www.eolymp.com/en/problems/4701 (problem from Example 1, only Russian statement available)</li>
 <li>https://www.eolymp.com/en/problems/9640</li>
