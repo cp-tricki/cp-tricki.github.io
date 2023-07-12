@@ -2,12 +2,11 @@ site_name: CP-Tricki
 site_url: https://cp-tricki.github.io/
 repo_url: https://github.com/cp-tricki/cp-tricki.github.io
 repo_name: cp-tricki/cp-tricki.github.io
+edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
   custom_dir: docs/overrides
-  edit_uri: edit/main/docs/
-  view_uri: raw/main/docs
   
   palette: 
   - scheme: default
