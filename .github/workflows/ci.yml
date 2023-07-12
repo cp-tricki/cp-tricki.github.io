@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
@@ -25,6 +27,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
+      - run: pip install lxml
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install mkdocs-git-revision-date-localized-plugin
 
