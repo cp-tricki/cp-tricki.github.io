@@ -5,6 +5,7 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides
+  
   palette: 
   - scheme: default
     primary: amber
@@ -26,7 +27,9 @@ theme:
 plugins:
   - search:
       lang: en
-  - git-authors
+  - git-committers:
+      repository: cp-tricki/cp-tricki.github.io
+      branch: main
   - git-revision-date-localized:
       enable_creation_date: true
 
