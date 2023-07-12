@@ -1,3 +1,6 @@
 ---
 title: Greedy strategies
 ---
+
+
+[TOC]
