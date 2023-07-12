@@ -5,6 +5,7 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides
+  edit_uri: edit/main/docs/
   
   palette: 
   - scheme: default
@@ -23,6 +24,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.tracking
+    - content.action.view
   
 plugins:
   - search:
