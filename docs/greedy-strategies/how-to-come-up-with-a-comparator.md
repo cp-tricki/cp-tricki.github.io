@@ -65,9 +65,9 @@ Below we describe our implementation of the general strategy.
 
 ### Online Judges
 
-1. https://www.eolymp.com/en/problems/4701 (problem from Example 1, only Russian statement available)
-2. https://www.eolymp.com/en/problems/9640
-3. https://www.eolymp.com/en/problems/1591
-4. https://www.eolymp.com/en/problems/2219
-5. https://www.eolymp.com/en/problems/4699 (only Russian statement available) 
-6. https://codeforces.com/gym/104397/problem/A
+1. [Коробки (Boxes)](https://www.eolymp.com/en/problems/4701) (problem from Example 1, only Russian statement available)
+2. [Dino and fetters](https://www.eolymp.com/en/problems/9640)
+3. [Shoemaker Problem](https://www.eolymp.com/en/problems/1591)
+4. [Snow White and n gnomes](https://www.eolymp.com/en/problems/2219)
+5. [Приключение (Adventure)](https://www.eolymp.com/en/problems/4699) (only Russian statement available) 
+6. [Inverse Pairs of Binary Strings](https://codeforces.com/gym/104397/problem/A)
