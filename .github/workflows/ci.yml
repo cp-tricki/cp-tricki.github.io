@@ -27,7 +27,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-toc-md
       - run: pip install lxml
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install mkdocs-git-revision-date-localized-plugin

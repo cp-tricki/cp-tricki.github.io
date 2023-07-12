@@ -2,5 +2,4 @@
 title: Greedy strategies
 ---
 
-
-[TOC]
+## Some text
