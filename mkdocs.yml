@@ -8,7 +8,6 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.tracking
-    - navigation.indexes
   
 plugins:
   - search:
