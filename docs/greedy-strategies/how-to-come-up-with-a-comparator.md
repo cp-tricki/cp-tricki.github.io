@@ -2,19 +2,19 @@
 title: How to come up with a comparator?
 ---
 
-**Acknowledgements.**
+### Acknowledgements
 
 We start from a simple trick, which was exposed by Sergei Kopeliovich at Winter Programming School in Kharkiv in 2013.
 
-**Short description.**
+### Short description
 
 If it seems that a problem can be solved by an algorithm of the form: "arrange the objects in a suitable way and then work greedily", there is a general strategy to devise a comparator for this sort.
 
-**Prerequisites.**
+### Prerequisites
 
 No specific knowledge is required, though familiarity with greedy algorithms would be useful.
 
-**General description**
+### General description
 
 *The auxiliary problem*: find an order that optimises a construction (that is the essential part of the considered problem) if it is known that such an order exists.
 
@@ -30,11 +30,9 @@ To do so, we use the comparator from the *auxiliary problem*, and take objects g
 
 More generally one can write here a knapsack-like dp (if we have a subset we know the order by the auxiliary problem).
 
-**Example 1.**
+### Example 1 (a tower of boxes)
 
 Given \(n\) boxes, each of which has its weight \(m_i\) and the weight it can carry on the top \(a_i\), determine the size of the largest tower one can build. 
-
-**Explanations.**
 
 **Step 1. Build a tower of all boxes.** 
 In other words, we need to arrange the boxes in such a way that nothing breaks. Considering two distinct boxes, say \(i\) and \(j\), we ask: when the order \((i,j)\) is better than \((j,i)\)? Obviously, that is when the excess of our carrying abilities is greater (that is when the total weight that we can additionally carry is greater). In other words, our cost function looks like this (here box \(j\) stands on the top of \(i\)): \(f(i, j) = \min(\) total weight that can be still carried by box \(i\), total weight that can be still carried by \(j)\), i.e. \(f(i, j) = \min(a_i - m_j , a_j)\). Then we will build the tower in descending order of value.
@@ -42,11 +40,9 @@ In other words, we need to arrange the boxes in such a way that nothing breaks. 
 **Step 2. Build a max-size tower.**
 Sort the boxes in the increasing order with respect to the comparator from Step 1. Take them greedily: if we can put the next box below the already built tower, we do it; otherwise, we ponder whether can we replace some of the boxes in the tower with our current one and decrease the weight the bottom box carries. 
 
-**Example 2** ([this CSES problem](https://cses.fi/problemset/task/2426)).
+### Example 2 ([this CSES problem](https://cses.fi/problemset/task/2426)).
 
 Given \(n\) people and their programmer skill (\(skill_1\)) and artistic skill (\(skill_2\)). We need to take exactly \(a\) programmers and \(b\) artists. Maximise total skill. 
-
-**Explanations.**
 
 **Step 1. Take all people, at least \(a\) programmers and at least \(b\) artists.** ([this eolymp problem](https://www.eolymp.com/en/problems/182))
 
@@ -67,7 +63,7 @@ Below we describe our implementation of the general strategy.
 
 **4.** Depending on which choice ("greedy" or "replacing) is better we change our sets.
 
-**Online Judges**
+### Online Judges
 
 1. https://www.eolymp.com/en/problems/4701 (problem from Example 1, only Russian statement available)
 2. https://www.eolymp.com/en/problems/9640
