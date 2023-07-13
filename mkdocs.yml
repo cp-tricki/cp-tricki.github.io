@@ -23,8 +23,10 @@ theme:
     
   features:
     - navigation.instant
-    - navigation.tabs
+    # - navigation.tabs
     - navigation.tracking
+    - navigation.indexes
+    - navigation.tabs
     - content.action.view
   
 plugins:
@@ -33,8 +35,8 @@ plugins:
   - git-committers:
       repository: cp-tricki/cp-tricki.github.io
       branch: main
-  - git-revision-date-localized:
-      enable_creation_date: true
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
 
 
 markdown_extensions:
