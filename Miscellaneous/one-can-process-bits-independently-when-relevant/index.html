@@ -690,27 +690,27 @@
 <h3 id="example">Example</h3>
 <p>The task is to calculate <span class="arithmatex">\(\sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (a_l \oplus \dots \oplus a_r)\)</span></p>
 <p><strong>Explanations</strong></p>
-<p>Let's use the trick so the expression will take form
-[
+<p>Let's use the trick so the expression will take form</p>
+<div class="arithmatex">\[
 \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (a_l \oplus \dots \oplus a_r)=
-]
-[
+\]</div>
+<div class="arithmatex">\[
 \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (\sum\limits_{k=0}^{M} (2^k \cdot b_{l,k}) \oplus \dots \oplus \sum\limits_{k=0}^{M} (2^k \cdot b_{r,k}))\overset{*}{=} 
-]
-[
+\]</div>
+<div class="arithmatex">\[
 \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n}\sum\limits_{k=0}^{M} 2^k\cdot (b_{l,k} \oplus \dots \oplus b_{r,k})=
-]
-[
-\sum\limits_{k=0}^{M}2^k\cdot \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n}  (b_{l,k} \oplus \dots \oplus b_{r,k})
-]
-Where <span class="arithmatex">\(b_{i,k}\)</span> is the <span class="arithmatex">\(k\)</span>-th bit of <span class="arithmatex">\(a_i\)</span> and it is equal to <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span>.</p>
+\]</div>
+<div class="arithmatex">\[
+\sum\limits_{k=0}^{M}2^k\cdot \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n}  (b_{l,k} \oplus \dots \oplus b_{r,k}),
+\]</div>
+<p>where <span class="arithmatex">\(b_{i,k}\)</span> is the <span class="arithmatex">\(k\)</span>-th bit of <span class="arithmatex">\(a_i\)</span> and it is equal to <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span>.</p>
 <p>It's correct to do (<span class="arithmatex">\(\ast\)</span>) above because multiplying by <span class="arithmatex">\(2^k\)</span> is equal to shifting <span class="arithmatex">\(k\)</span> bits right, and <span class="arithmatex">\((a\ll x)\oplus (b\ll x)=(a\oplus b)\ll x\)</span>.</p>
 <p>Actually, the expression <span class="arithmatex">\((b_{l,k} \oplus \dots \oplus b_{r,k})\)</span> is also equal to <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span>(number of ones on the segment is odd). Hence it is much easier to calculate this sum (equivalently the number of segments with odd sum).</p>
 <h3 id="online-judge">Online Judge</h3>
 <ol>
 <li><a href="https://codeforces.com/gym/102964/problem/I?locale=en">Krosh and one more problem with xors</a></li>
 <li><a href="https://codeforces.com/gym/104333/problem/A">Convolution XOR SUM</a></li>
-<li><a href="https://codeforces.com/contest/242/problem/E">XOR на отрезке</a></li>
+<li><a href="https://codeforces.com/contest/242/problem/E">XOR on Segment</a></li>
 <li><a href="https://codeforces.com/contest/1322/problem/B?locale=en">Present</a></li>
 </ol>
 
