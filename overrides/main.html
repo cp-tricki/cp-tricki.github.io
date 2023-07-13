@@ -34,7 +34,7 @@
         </li>
 
     {% else %}
-        {% if not (nav_item.file.src_uri.split('/')[-1] == "navigation.md") %}
+        {% if not (nav_item.file.src_uri.split('/')[-1] == "navigation.md" or nav_item.file.src_uri.split('/')[-1] == "index.md") %}
         <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
         {% endif %}
     {% endif %}
