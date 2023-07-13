@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cp-tricki.github.io/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/greedy-strategies/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/greedy-strategies/how-to-come-up-with-a-comparator/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
