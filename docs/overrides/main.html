@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% if nav|length>1 %}
+{% if children|length>0 %}
     <ul>
     {% for nav_item in nav %}
         {% if nav_item.children %}
