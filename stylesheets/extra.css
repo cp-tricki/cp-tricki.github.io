@@ -25,3 +25,9 @@ body[dir=rtl] .metadata.page-metadata .contributors-text{
     margin:0;
     padding:0
 }
+
+
+/* The following is for navigation lists */
+/* .mknav {
+    list-style-type: none !important;
+} */
