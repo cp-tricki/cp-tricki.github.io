@@ -2,9 +2,9 @@
 
 {% block content %}
 
-{% if children|length>0 %}
+<!-- {% if children|length>0 %} -->
     <ul>
-    {% for nav_item in nav %}
+    {% for nav_item in children %}
         {% if nav_item.children %}
             <li>{{ nav_item.title }}
                 <ul>
@@ -22,7 +22,7 @@
         {% endif %}
     {% endfor %}
     </ul>
-{% endif %}
+<!-- {% endif %} -->
 
 {{ super() }}
 
