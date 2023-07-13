@@ -4,7 +4,7 @@
 
 <!-- {% if children|length>0 %} -->
     <ul>
-    {% for nav_item in children %}
+    {% for nav_item in page.parent %}
         {% if nav_item.children %}
             <li>{{ nav_item.title }}
                 <ul>
@@ -27,7 +27,7 @@
 {{ super() }}
 
     <div class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
-        <span class="contributors-text">Contributors:
+        <span class="contributors-text">Contributors:&nbsp;
             {%- for user in committers -%}
             <a href="{{ user.url }}" title="{{ user.name }}" data-bi-name="contributorprofile" target="_blank">{{ user.name }} </a>
             {%- endfor -%}
