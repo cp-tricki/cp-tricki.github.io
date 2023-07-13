@@ -754,7 +754,7 @@
 <div class="arithmatex">\[
     dp_n = a_1 dp_{n-1} + a_2 dp_{n-2} + \dots + a_k dp_{n-k}.
 \]</div>
-<p>Then, one can notice that the right hand side can be expressed as dot prothe duct</p>
+<p>Then, one can notice that the right hand side can be expressed as the dot product</p>
 <div class="arithmatex">\[
     a_1 dp_{n-1} + \dots + a_k dp_{n-k} = 
     \begin{pmatrix}
@@ -805,7 +805,7 @@ We can inductively deduce</p>
 <p>Given <span class="arithmatex">\(dp_n = A dp_{n-1} + B dp_{n-2} + C\)</span>, find <span class="arithmatex">\(dp_N\)</span> in <span class="arithmatex">\(O(\log N)\)</span> time. </p>
 <p>We can use the same idea here,</p>
 <div class="arithmatex">\[
-    \begin{pmatrix}dp_n dp_{n-1} C\end{pmatrix} = \begin{pmatrix}A &amp; B &amp; 1\end{pmatrix} \begin{pmatrix} dp_{n-1} &amp; dp_{n-2} &amp; C \end{pmatrix}
+    \begin{pmatrix}dp_n &amp; dp_{n-1} &amp; C\end{pmatrix} = \begin{pmatrix}A &amp; B &amp; 1\end{pmatrix} \begin{pmatrix} dp_{n-1} &amp; dp_{n-2} &amp; C \end{pmatrix}
 \]</div>
 <p>only adding a column to our transition matrix and the constant to our <span class="arithmatex">\(recent_n\)</span> vector.</p>
 <h3 id="example-2-twisted-dps">Example 2 (twisted DPs)</h3>
