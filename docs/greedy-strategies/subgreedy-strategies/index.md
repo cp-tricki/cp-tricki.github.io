@@ -1,3 +1,0 @@
----
-title: Subgreedy strategies
----
