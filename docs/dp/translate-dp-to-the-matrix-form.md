@@ -18,7 +18,7 @@ We shall not follow the most general setting here, instead focusing on the follo
 	dp_n = a_1 dp_{n-1} + a_2 dp_{n-2} + \dots + a_k dp_{n-k}.
 \]
 
-Then, one can notice that the right hand side can be expressed as dot prothe duct
+Then, one can notice that the right hand side can be expressed as the dot product
 
 \[
 	a_1 dp_{n-1} + \dots + a_k dp_{n-k} = 
@@ -81,7 +81,7 @@ Given \(dp_n = A dp_{n-1} + B dp_{n-2} + C\), find \(dp_N\) in \(O(\log N)\) tim
 We can use the same idea here,
 
 \[
-	\begin{pmatrix}dp_n dp_{n-1} C\end{pmatrix} = \begin{pmatrix}A & B & 1\end{pmatrix} \begin{pmatrix} dp_{n-1} & dp_{n-2} & C \end{pmatrix}
+	\begin{pmatrix}dp_n & dp_{n-1} & C\end{pmatrix} = \begin{pmatrix}A & B & 1\end{pmatrix} \begin{pmatrix} dp_{n-1} & dp_{n-2} & C \end{pmatrix}
 \]
 
 only adding a column to our transition matrix and the constant to our \(recent_n\) vector.
