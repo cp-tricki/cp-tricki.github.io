@@ -805,13 +805,13 @@
 <p>Some problems on labeled trees that does not involve much of internal structure can be reduced to the more straightforward problems on arrays. </p>
 <h3 id="general-description">General description.</h3>
 <p>Apart from other heavy methods of counting labeled structures (graphs, say) such as generating functions, there is a remarkably elementary method called Prüfer bijection.</p>
-<p>In short, this is well-behaved combinatorial construction that establish bijection:
-$$
-\Big{\text{labeled trees on <span class="arithmatex">\(\{1,\dots,n\}\)</span>}\Big} 
+<p>In short, this is well-behaved combinatorial construction that establish bijection:</p>
+<div class="arithmatex">\[
+\Big\{\text{labeled trees on $\{1,\dots,n\}$}\Big\} 
 \longleftrightarrow
-\Big{\text{arrays on <span class="arithmatex">\(\{1,\dots,n\}\)</span> of length <span class="arithmatex">\(n-2\)</span>}\Big}
-$$
-which is build explicitly using the algorithm described well <a href="https://cp-algorithms.com/graph/pruefer_code.html">here</a> as well as in many other Internet resources. Returning to the point, we reduce problem on trees to the problem on arbitrary sequences of fixed length. The rest now is just to note several useful properties, for example that every index, say <span class="arithmatex">\(v\)</span>, occurs <span class="arithmatex">\(\deg v-1\)</span> times, hence, for example, no leaves occur in the sequence. One more remarkable corollary from this bijection, so-called Cayley's formula, is the fact that the number of label trees on <span class="arithmatex">\(\{1,\dots,n\}\)</span> is equal to <span class="arithmatex">\(n^{n-2}\)</span>; if one proceed more carefully, the formula <span class="arithmatex">\(T_{n,k} = k n^{n-k-1}\)</span> for the number of labeled forests with <span class="arithmatex">\(k\)</span> connected components is easily derivable. </p>
+\Big\{\text{arrays on $\{1,\dots,n\}$ of length $n-2$}\Big\}
+\]</div>
+<p>which is build explicitly using the algorithm described well <a href="https://cp-algorithms.com/graph/pruefer_code.html">here</a> as well as in many other Internet resources. Returning to the point, we reduce problem on trees to the problem on arbitrary sequences of fixed length. The rest now is just to note several useful properties, for example that every index, say <span class="arithmatex">\(v\)</span>, occurs <span class="arithmatex">\(\deg v-1\)</span> times, hence, for example, no leaves occur in the sequence. One more remarkable corollary from this bijection, so-called Cayley's formula, is the fact that the number of label trees on <span class="arithmatex">\(\{1,\dots,n\}\)</span> is equal to <span class="arithmatex">\(n^{n-2}\)</span>; if one proceed more carefully, the formula <span class="arithmatex">\(T_{n,k} = k n^{n-k-1}\)</span> for the number of labeled forests with <span class="arithmatex">\(k\)</span> connected components is easily derivable. </p>
 <p>In short, Prüfer codes gives a simple combinatorial way to control labeled trees (and forests), though mostly in terms of degrees of their vertices. </p>
 <h3 id="example-1">Example 1.</h3>
 <p>This is a bit artificial example, but it keeps everything simple and gives a clue how to solve such kind of problems.</p>
