@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://cp-tricki.github.io/dp/translate-dp-to-the-matrix-form/">
+        <link rel="canonical" href="https://cp-tricki.github.io/combinatorics/Permutations%20can%20be%20represented%20as%20graphs/">
       
       
-        <link rel="prev" href="../../combinatorics/Permutations%20can%20be%20represented%20as%20graphs/">
+        <link rel="prev" href="../Counting%20labeled%20trees/">
       
       
-        <link rel="next" href="../../greedy-strategies/how-to-come-up-with-a-comparator/">
+        <link rel="next" href="../../dp/translate-dp-to-the-matrix-form/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Translate DP to the matrix form - CP-Tricki</title>
+        <title>Permutations can be represented as graphs - CP-Tricki</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Translate DP to the matrix form
+              Permutations can be represented as graphs
             
           </span>
         </div>
@@ -250,11 +250,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../combinatorics/Counting%20labeled%20trees/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Counting%20labeled%20trees/" class="md-tabs__link">
           
   
   Combinatorics
@@ -268,13 +270,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../dp/translate-dp-to-the-matrix-form/" class="md-tabs__link">
           
   
   Dp
@@ -437,92 +437,6 @@
       
   
   
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Combinatorics
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Combinatorics
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../combinatorics/Counting%20labeled%20trees/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Counting labeled trees
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../combinatorics/Permutations%20can%20be%20represented%20as%20graphs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Permutations can be represented as graphs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -539,26 +453,46 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Dp
+    Combinatorics
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Dp
+            Combinatorics
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Counting%20labeled%20trees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Counting labeled trees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -577,7 +511,7 @@
           
   
   <span class="md-ellipsis">
-    Translate DP to the matrix form
+    Permutations can be represented as graphs
   </span>
   
 
@@ -588,7 +522,7 @@
         
   
   <span class="md-ellipsis">
-    Translate DP to the matrix form
+    Permutations can be represented as graphs
   </span>
   
 
@@ -629,15 +563,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-1-constant" class="md-nav__link">
-    Example 1 (+constant)
+  <a href="#example-1" class="md-nav__link">
+    Example 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-2-twisted-dps" class="md-nav__link">
-    Example 2 (twisted DPs)
+  <a href="#explanations" class="md-nav__link">
+    Explanations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanations_1" class="md-nav__link">
+    Explanations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online judges
   </a>
   
 </li>
@@ -646,6 +601,72 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Dp
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Dp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dp/translate-dp-to-the-matrix-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translate DP to the matrix form
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -770,15 +791,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-1-constant" class="md-nav__link">
-    Example 1 (+constant)
+  <a href="#example-1" class="md-nav__link">
+    Example 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-2-twisted-dps" class="md-nav__link">
-    Example 2 (twisted DPs)
+  <a href="#explanations" class="md-nav__link">
+    Explanations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanations_1" class="md-nav__link">
+    Explanations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online judges
   </a>
   
 </li>
@@ -801,7 +843,7 @@
                   
 
   
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/dp/translate-dp-to-the-matrix-form.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/combinatorics/Permutations can be represented as graphs.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -810,90 +852,44 @@
     
       
     
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/dp/translate-dp-to-the-matrix-form.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/combinatorics/Permutations can be represented as graphs.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Translate DP to the matrix form</h1>
+  <h1>Permutations can be represented as graphs</h1>
 
 <h3 id="short-description">Short description</h3>
-<p>Sometimes, we can rewrite our dynamic programming transition formulae using matrices and operations between them (most remarkably multiplication). Then, we can exploit this form in some way.</p>
+<p>If the problem is about permutations, try to think about them as graphs.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Basic familiarity with dynamic programming and matrices (linear algebra in general does not required).</p>
+<p>No specific knowledge.</p>
 <h3 id="general-description">General description</h3>
-<p>We shall not follow the most general setting here, instead focusing on the following DP (linear rerecurrenceelation):</p>
-<div class="arithmatex">\[
-    dp_n = a_1 dp_{n-1} + a_2 dp_{n-2} + \dots + a_k dp_{n-k}.
-\]</div>
-<p>Then, one can notice that the right hand side can be expressed as the dot product</p>
-<div class="arithmatex">\[
-    a_1 dp_{n-1} + \dots + a_k dp_{n-k} = 
-    \begin{pmatrix}
-        a_1 &amp; a_2 &amp; \dots &amp; a_k
-    \end{pmatrix}
-    \begin{pmatrix}
-        dp_{n-1} &amp; dp_{n-2} &amp; \dots &amp; dp_{n-k}
-    \end{pmatrix}^T.
-\]</div>
-<p>These vectors on their own are very natural: the first one is our coefficients and the second one keeps our recent values of DP. 
-The key idea now is to obtain the next vector of recent values, namely <span class="arithmatex">\( \begin{pmatrix} dp_n &amp; dp_{n-1} &amp; \dots &amp; dp_{n-k+1} \end{pmatrix}^T \)</span>. 
-To do so, we need to apply our previous relation, and then shift all the other values (as well as eliminate <span class="arithmatex">\(dp_{n-k}\)</span> because we will not need it further).
-Is it actually easy to shift, so we have the following identity </p>
-<div class="arithmatex">\[
-    \begin{pmatrix}
-        dp_{n}\\
-        dp_{n-1}\\
-        \vdots\\
-        dp_{n-k+2}\\
-        dp_{n-k+1}
-    \end{pmatrix} =
-    \begin{pmatrix}
-        a_1    &amp; a_2    &amp; \dots  &amp; a_{k-1} &amp; a_k\\
-        1      &amp; 0      &amp; \dots  &amp; 0       &amp; 0\\
-        0      &amp; 1      &amp; \dots  &amp; 0       &amp; 0\\
-        \vdots &amp; \vdots &amp; \ddots &amp; \vdots  &amp; \vdots\\
-        0      &amp; 0      &amp; \dots  &amp; 1       &amp; 0
-    \end{pmatrix}
-    \begin{pmatrix}
-        dp_{n-1} \\
-        dp_{n-2} \\
-        \vdots\\
-        dp_{n-k+1}\\
-        dp_{n-k}
-    \end{pmatrix}
-\]</div>
-<p>Or, in a more compact form (<span class="arithmatex">\(A\)</span> is the large matrix on the left hand side)</p>
-<div class="arithmatex">\[
-    recent_n = A~recent_{n-1},
-\]</div>
-<p>where <span class="arithmatex">\(recent_n\)</span> is the vector <span class="arithmatex">\((dp_n, dp_{n-1}, \dots, dp_{n-k+1}\)</span> which contains the last <span class="arithmatex">\(k\)</span> dp values. 
-We can inductively deduce</p>
-<div class="arithmatex">\[
-    recent_n = A recent_{n-1} = A^2 recent_{n-2} = \dots = A^{n-k+1} recent_{k-1}.
-\]</div>
-<p>Matrix multiplication can be done in <span class="arithmatex">\(O(k^3)\)</span>, and using binary exponentiation we obtain <span class="arithmatex">\(O(k^3 \log n)\)</span> algorithm.</p>
-<h3 id="example-1-constant">Example 1 (+constant)</h3>
-<p>Given <span class="arithmatex">\(dp_n = A dp_{n-1} + B dp_{n-2} + C\)</span>, find <span class="arithmatex">\(dp_N\)</span> in <span class="arithmatex">\(O(\log N)\)</span> time. </p>
-<p>We can use the same idea here,</p>
-<div class="arithmatex">\[
-    \begin{pmatrix}dp_n &amp; dp_{n-1} &amp; C\end{pmatrix} = \begin{pmatrix}A &amp; B &amp; 1\end{pmatrix} \begin{pmatrix} dp_{n-1} &amp; dp_{n-2} &amp; C \end{pmatrix}
-\]</div>
-<p>only adding a column to our transition matrix and the constant to our <span class="arithmatex">\(recent_n\)</span> vector.</p>
-<h3 id="example-2-twisted-dps">Example 2 (twisted DPs)</h3>
-<p>Sometimes one needs to evaluate several twisted but simple DPs, something like (some random relations just for the sake of illustration):</p>
-<div class="arithmatex">\[
-    dp^1_i = f(dp^1_{i-1}, dp^1_{i-2}, dp^2_{i-1}, dp^3_{i-2}),
-\]</div>
-<div class="arithmatex">\[
-    dp^2_i = g(dp^1_{i-1}, dp^2_{i}, dp^2_{i-1}, dp^2_{i-2}),
-\]</div>
-<div class="arithmatex">\[
-    dp^3_i = h(dp^2_{i-2}, dp^3_{i-1}).
-\]</div>
-<p>Then one can also use some kind of matrix transformation but with more convoluted <span class="arithmatex">\(recent\)</span> vectors.</p>
+<p>Consider a permutation <span class="arithmatex">\(p_1,p_2,\dots, p_n\)</span>. Let's construct an undirected graph where exist an edge between <span class="arithmatex">\(i\)</span> <span class="arithmatex">\(\leftrightarrow\)</span> <span class="arithmatex">\(p_i\)</span>. In such construction this graph will contain only cycles (isolated vertex-loop, forward-backward edges or usual cycles).
+For example <span class="arithmatex">\([2,4,5,1,3]\)</span> will split into <span class="arithmatex">\([{\color{teal}2},{\color{teal}4},{\color{pink}5},{\color{teal}1},{\color{pink}3}]\)</span>.
+In problems, it may be efficient to consider each cycle independently.</p>
+<h3 id="example-1">Example 1</h3>
+<p>Given a permutation <span class="arithmatex">\(a\)</span>. You can choose any two indexes <span class="arithmatex">\(i,j\)</span> and swap <span class="arithmatex">\(a_i,a_j\)</span>. What is the minimal number of swaps to make the permutation sorted?</p>
+<h3 id="explanations">Explanations</h3>
+<p>Let's consider a cycle of the permutation. Suppose it's length is <span class="arithmatex">\(m\)</span>. We can make all the elements from the cycle to be on their places in <span class="arithmatex">\(m-1\)</span> operations. That's because if <span class="arithmatex">\(m-1\)</span> elements will be on their place, the <span class="arithmatex">\(m\)</span>-th will also be on its place.</p>
+<p>So the answer to the problem is the sum of cycle lengths minus the number of cycles. If the number of cycles is <span class="arithmatex">\(c\)</span> than the answer is <span class="arithmatex">\(n-c\)</span>.</p>
+<h3 id="example-2">Example 2</h3>
+<p>You need to process two types of queries:</p>
+<ul>
+<li>swap <span class="arithmatex">\(p_x,p_y\)</span>.</li>
+<li>find the value of <span class="arithmatex">\(i\)</span> if you assign <span class="arithmatex">\(i=p_i\)</span>  <span class="arithmatex">\(k\)</span> times.</li>
+</ul>
+<h3 id="explanations_1">Explanations</h3>
+<p>Let <span class="arithmatex">\(S\approx \sqrt{n}\)</span>. For each <span class="arithmatex">\(i\)</span> we can calculate the position of <span class="arithmatex">\(i\)</span> after applying <span class="arithmatex">\(S\)</span> times <span class="arithmatex">\(i=p_i\)</span>. (Very similar to the technique using in tree jumping). Now, we can answer the second query in <span class="arithmatex">\(O(\frac{k}{S}+S)\)</span> jumping <span class="arithmatex">\(\frac{k}{S}\)</span> times with the step of length <span class="arithmatex">\(S\)</span>, what is precalculated, and the remainder jumps with step of length <span class="arithmatex">\(1\)</span>.</p>
+<p>To perform updates, you should notice that only <span class="arithmatex">\(2 \cdot S\)</span> values will change (<span class="arithmatex">\(S\)</span> jumps forward and <span class="arithmatex">\(S\)</span> jumps back).</p>
+<h3 id="online-judges">Online judges</h3>
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/minimum-swaps-2/problem">Minimum Swaps 2</a></li>
+<li><a href="https://cses.fi/problemset/task/1698">Swap Round Sorting</a></li>
+<li><a href="https://codeforces.com/problemset/problem/1619/H?locale=en">Permutation and Queries</a></li>
+<li><a href="https://codeforces.com/contest/1768/problem/D?locale=en">Lucky Permutation</a></li>
+</ul>
 
 
 
