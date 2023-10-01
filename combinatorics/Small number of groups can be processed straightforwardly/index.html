@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://cp-tricki.github.io/combinatorics/One%20can%20process%20bits%20independently%20when%20relevant/">
+        <link rel="canonical" href="https://cp-tricki.github.io/combinatorics/Small%20number%20of%20groups%20can%20be%20processed%20straightforwardly/">
       
       
-        <link rel="prev" href="../Counting%20labeled%20trees/">
+        <link rel="prev" href="../Permutations%20can%20be%20represented%20as%20graphs/">
       
       
-        <link rel="next" href="../One%20can%20use%20determinants%20to%20count%20lattice%20paths/">
+        <link rel="next" href="../../dp/translate-dp-to-the-matrix-form/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>One can process bits independently when relevant - CP-Tricki</title>
+        <title>Small number of groups can be processed straightforwardly - CP-Tricki</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              One can process bits independently when relevant
+              Small number of groups can be processed straightforwardly
             
           </span>
         </div>
@@ -414,27 +414,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    One can process bits independently when relevant
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../One%20can%20process%20bits%20independently%20when%20relevant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -443,59 +425,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#short-description" class="md-nav__link">
-    Short description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-description" class="md-nav__link">
-    General description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#online-judge" class="md-nav__link">
-    Online Judge
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -545,9 +474,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Small%20number%20of%20groups%20can%20be%20processed%20straightforwardly/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Small number of groups can be processed straightforwardly
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -556,6 +503,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#short-description" class="md-nav__link">
+    Short description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-description" class="md-nav__link">
+    Long description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online judges
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -739,22 +746,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-description" class="md-nav__link">
-    General description
+  <a href="#long-description" class="md-nav__link">
+    Long description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#example-1" class="md-nav__link">
+    Example 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#online-judge" class="md-nav__link">
-    Online Judge
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online judges
   </a>
   
 </li>
@@ -777,7 +791,7 @@
                   
 
   
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/combinatorics/One can process bits independently when relevant.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/combinatorics/Small number of groups can be processed straightforwardly.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -786,48 +800,45 @@
     
       
     
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/combinatorics/One can process bits independently when relevant.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/combinatorics/Small number of groups can be processed straightforwardly.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>One can process bits independently when relevant</h1>
+  <h1>Small number of groups can be processed straightforwardly</h1>
 
 <h3 id="short-description">Short description</h3>
-<p>If the problem is related with some bitwise operations (especially xor), try to think and process each bit independently.</p>
+<p>If the task is to say something about functions try to split them into groups with the same qualities.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>The knowledge of bitmasks (bitwise operations)</p>
-<h3 id="general-description">General description</h3>
-<p>Each integer <span class="arithmatex">\(x\)</span> can be represented as <span class="arithmatex">\(\sum\limits_{k=0}^{M} 2^k \cdot b_k\)</span> where <span class="arithmatex">\(b_k\)</span> is <span class="arithmatex">\(k\)</span>-th bit in binary representation of the integer and <span class="arithmatex">\(M\)</span> is <span class="arithmatex">\(\log_{2}{x}\)</span>.</p>
-<p>It is often difficult to follow all bits simultaneously, however, we can transform the expression in such way, that bits are calculated independently.</p>
-<h3 id="example">Example</h3>
-<p>The task is to calculate <span class="arithmatex">\(\sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (a_l \oplus \dots \oplus a_r)\)</span></p>
+<p>Basic knowledge.</p>
+<h3 id="long-description">Long description</h3>
+<p>Sometimes it may be efficient to observe how the function changes. For example, it can rapidly increase or decrease. In such cases you can divide it into groups of equal values and the total number of groups will be rather small.</p>
+<p>Usually such functions are related with <span class="arithmatex">\(\gcd\)</span> or bitwise operations. </p>
+<h3 id="example-1">Example 1</h3>
+<p>Given an array <span class="arithmatex">\(a_1,a_2,\dots a_n\)</span>. Let <span class="arithmatex">\(F(l,r)\)</span> is bitwise AND of the elements on the segment <span class="arithmatex">\([l,r]\)</span>. Count the number of different <span class="arithmatex">\(F(l,r)\)</span> for all pairs <span class="arithmatex">\(1\le l \le r\le n\)</span>.</p>
+<p><strong>Explanation</strong></p>
+<p>Notice that <span class="arithmatex">\(F(l,r)=F(l,r+1)\)</span> or <span class="arithmatex">\(F(l,r) &gt; F(l,r+1)\)</span> and the number of second cases is small. When the function decreases, it means that bits are removed. And the amount of bits is limited with <span class="arithmatex">\(\log_{2}{A}\)</span>. So we can jump through the values of <span class="arithmatex">\(F(l,r)\)</span> which are equal and the number of such jumps will be rather small.</p>
+<h3 id="example-2">Example 2</h3>
+<p>Given two arrays <span class="arithmatex">\(c_1,c_2,\dots, c_n\)</span> and <span class="arithmatex">\(f_1,f_2,\dots,f_n\)</span>. At first you have <span class="arithmatex">\(T=1\)</span>. 
+You perform <span class="arithmatex">\(n\)</span> steps. On the <span class="arithmatex">\(i\)</span>-th you:
+- Choose <span class="arithmatex">\(k\ge 0\)</span> and multiply <span class="arithmatex">\(T\)</span> by <span class="arithmatex">\(2^k\)</span>.
+- Add <span class="arithmatex">\(f_i\cdot \lfloor \frac{c_i}{T} \rfloor\)</span> to the answer.
+Maximize the answer.</p>
 <p><strong>Explanations</strong></p>
-<p>Let's use the trick so the expression will take form</p>
+<p>Let <span class="arithmatex">\(ans[i][k]\)</span> is equal to the maximal answer of the first <span class="arithmatex">\(i\)</span> elements where <span class="arithmatex">\(T\)</span> is equal to <span class="arithmatex">\(2^k\)</span>. Notice, that we should consider <span class="arithmatex">\(k\)</span> only up to <span class="arithmatex">\(\log_{2}{c_i}\)</span>, because otherwise <span class="arithmatex">\(f_i\cdot \lfloor \frac{c_i}{T} \rfloor=0\)</span>.
+The transitions are: </p>
 <div class="arithmatex">\[
-\sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (a_l \oplus \dots \oplus a_r)=
+ans[i][k]=\max\limits_{k'=0}^{k}ans[i-1][k']+f_i\cdot \lfloor \frac{c_i}{2^k} \rfloor.
 \]</div>
-<div class="arithmatex">\[
-\sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n} (\sum\limits_{k=0}^{M} (2^k \cdot b_{l,k}) \oplus \dots \oplus \sum\limits_{k=0}^{M} (2^k \cdot b_{r,k}))\overset{*}{=} 
-\]</div>
-<div class="arithmatex">\[
-\sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n}\sum\limits_{k=0}^{M} 2^k\cdot (b_{l,k} \oplus \dots \oplus b_{r,k})=
-\]</div>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{M}2^k\cdot \sum\limits_{l=1}^{n}\sum\limits_{r=l}^{n}  (b_{l,k} \oplus \dots \oplus b_{r,k}),
-\]</div>
-<p>where <span class="arithmatex">\(b_{i,k}\)</span> is the <span class="arithmatex">\(k\)</span>-th bit of <span class="arithmatex">\(a_i\)</span> and it is equal to <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span>.</p>
-<p>It's correct to do (<span class="arithmatex">\(\ast\)</span>) above because multiplying by <span class="arithmatex">\(2^k\)</span> is equal to shifting <span class="arithmatex">\(k\)</span> bits right, and <span class="arithmatex">\((a\ll x)\oplus (b\ll x)=(a\oplus b)\ll x\)</span>.</p>
-<p>Actually, the expression <span class="arithmatex">\((b_{l,k} \oplus \dots \oplus b_{r,k})\)</span> is also equal to <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span>(number of ones on the segment is odd). Hence it is much easier to calculate this sum (equivalently the number of segments with odd sum).</p>
-<h3 id="online-judge">Online Judge</h3>
-<ol>
-<li><a href="https://codeforces.com/gym/102964/problem/I?locale=en">Krosh and one more problem with xors</a></li>
-<li><a href="https://codeforces.com/gym/104333/problem/A">Convolution XOR SUM</a></li>
-<li><a href="https://codeforces.com/contest/242/problem/E">XOR on Segment</a></li>
-<li><a href="https://codeforces.com/contest/1322/problem/B?locale=en">Present</a></li>
-</ol>
+<h3 id="online-judges">Online judges</h3>
+<ul>
+<li><a href="https://atcoder.jp/contests/abc315/tasks/abc315_f">Shortcuts</a></li>
+<li><a href="https://codeforces.com/contest/1878/problem/G?locale=en">wxhtzdy ORO Tree</a></li>
+<li><a href="https://codeforces.com/contest/1834/problem/E">MEX of LCM</a></li>
+<li><a href="https://codeforces.com/gym/104586/problem/E">Рудольф и коктейли</a> (only Russian statement available)</li>
+</ul>
 
 
 

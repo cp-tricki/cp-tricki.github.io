@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cp-tricki.github.io/combinatorics/Small%20number%20of%20groups%20can%20be%20processed%20straightforwardly/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cp-tricki.github.io/dp/translate-dp-to-the-matrix-form/</loc>
          <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
