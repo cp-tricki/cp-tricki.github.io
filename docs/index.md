@@ -3,7 +3,9 @@ title: About
 ---
 ![Build status](https://github.com/cp-tricki/cp-tricki.github.io/actions/workflows/ci.yml/badge.svg)
 
-CP-Tricki is a collection of tricks for competitive programming inspired by [Tricki](https://www.tricki.org/).
+Welcome to CP-tricki! This is a collection of small tricks for competitive programming inspired by [Tricki](https://www.tricki.org/). You can browse (and, we hope, enjoy) available (currently only few) pages on the navbar. 
+
+![](kotek.jpg)
 
 ## Contributing
 To contribute, you can:
