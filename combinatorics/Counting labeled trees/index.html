@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://cp-tricki.github.io/greedy-strategies/how-to-come-up-with-a-comparator/">
+        <link rel="canonical" href="https://cp-tricki.github.io/combinatorics/Counting%20labeled%20trees/">
       
       
-        <link rel="prev" href="../../dp/translate-dp-to-the-matrix-form/">
+        <link rel="prev" href="../../Miscellaneous/one-can-process-bits-independently-when-relevant/">
       
+      
+        <link rel="next" href="../../dp/translate-dp-to-the-matrix-form/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>How to come up with a comparator? - CP-Tricki</title>
+        <title>Counting labeled trees - CP-Tricki</title>
       
     
     
@@ -77,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#acknowledgements" class="md-skip">
+        <a href="#prerequisites" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to come up with a comparator?
+              Counting labeled trees
             
           </span>
         </div>
@@ -248,11 +250,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../combinatorics/Counting%20labeled%20trees/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Combinatorics
@@ -284,13 +288,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../greedy-strategies/how-to-come-up-with-a-comparator/" class="md-tabs__link">
           
   
   Greedy strategies
@@ -435,6 +437,8 @@
       
   
   
+    
+  
   
     
     
@@ -444,12 +448,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -463,7 +467,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Combinatorics
@@ -474,9 +478,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../combinatorics/Counting%20labeled%20trees/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Counting labeled trees
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -485,6 +507,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#short-description" class="md-nav__link">
+    Short description.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-description" class="md-nav__link">
+    General description.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-judges" class="md-nav__link">
+    Online Judges
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -567,8 +642,6 @@
       
   
   
-    
-  
   
     
     
@@ -578,12 +651,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -597,7 +670,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Greedy strategies
@@ -608,27 +681,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    How to come up with a comparator?
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../greedy-strategies/how-to-come-up-with-a-comparator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,73 +692,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#acknowledgements" class="md-nav__link">
-    Acknowledgements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#short-description" class="md-nav__link">
-    Short description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-description" class="md-nav__link">
-    General description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-1-a-tower-of-boxes" class="md-nav__link">
-    Example 1 (a tower of boxes)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-2-this-cses-problem" class="md-nav__link">
-    Example 2 (this CSES problem).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#online-judges" class="md-nav__link">
-    Online Judges
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -741,43 +729,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acknowledgements" class="md-nav__link">
-    Acknowledgements
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites.
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#short-description" class="md-nav__link">
-    Short description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+    Short description.
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#general-description" class="md-nav__link">
-    General description
+    General description.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-1-a-tower-of-boxes" class="md-nav__link">
-    Example 1 (a tower of boxes)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-2-this-cses-problem" class="md-nav__link">
-    Example 2 (this CSES problem).
+  <a href="#example-1" class="md-nav__link">
+    Example 1.
   </a>
   
 </li>
@@ -807,7 +781,7 @@
                   
 
   
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/greedy-strategies/how-to-come-up-with-a-comparator.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/edit/main/docs/combinatorics/Counting labeled trees.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -816,63 +790,41 @@
     
       
     
-    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/greedy-strategies/how-to-come-up-with-a-comparator.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/cp-tricki/cp-tricki.github.io/raw/main/docs/combinatorics/Counting labeled trees.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>How to come up with a comparator?</h1>
+  <h1>Counting labeled trees</h1>
 
-<h3 id="acknowledgements">Acknowledgements</h3>
-<p>We start from a simple trick, which was exposed by Sergei Kopeliovich at Winter Programming School in Kharkiv in 2013.</p>
-<h3 id="short-description">Short description</h3>
-<p>If it seems that a problem can be solved by an algorithm of the form: "arrange the objects in a suitable way and then work greedily", there is a general strategy to devise a comparator for this sort.</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<p>No specific knowledge is required, though familiarity with greedy algorithms would be useful.</p>
-<h3 id="general-description">General description</h3>
-<p><em>The auxiliary problem</em>: find an order that optimises a construction (that is the essential part of the considered problem) if it is known that such an order exists.</p>
-<p>We first consider a simplified problem, when only two objects exist, say <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>. Then our comparator should determine which order is better: <span class="arithmatex">\(AB\)</span> or <span class="arithmatex">\(BA\)</span>. To do so, we can normally introduce a penalty (or a cost) function <span class="arithmatex">\(f(A,B)\)</span> denoting the amount of penalty (or cost) we have if one takes object <span class="arithmatex">\(A\)</span> first and object <span class="arithmatex">\(B\)</span> second. Then our comparator chooses that order in which the penalty is minimal (or cost is maximal). If this comparator (relation) <span class="arithmatex">\(A\prec B\)</span> (which is <span class="arithmatex">\(A\prec B \iff penalty(A,B)&lt;penalty(B,A)\)</span> or <span class="arithmatex">\(cost(A,B)&gt;cost(B,A)\)</span>) is transitive (i.e. if <span class="arithmatex">\(A\prec B\)</span> and <span class="arithmatex">\(B\prec C\)</span> then <span class="arithmatex">\(A\prec C\)</span>) then after sorting all the objects with respect to it we shall obtain the <em>optimal</em> order.</p>
-<p><em>The main problem</em>: find a maximal-size subset that optimises a construction. (The difference from idea 1 is that we are not forced to take <em>all</em> elements.)</p>
-<p>To do so, we use the comparator from the <em>auxiliary problem</em>, and take objects greedily one by one. At each step, we make a choice:</p>
-<ol>
-<li>
-<p>Put this object into the answer set,</p>
-</li>
-<li>
-<p>Replace an instance in the answer set with this object.</p>
-</li>
-</ol>
-<p>More generally one can write here a knapsack-like dp (if we have a subset we know the order by the auxiliary problem).</p>
-<h3 id="example-1-a-tower-of-boxes">Example 1 (a tower of boxes)</h3>
-<p>Given <span class="arithmatex">\(n\)</span> boxes, each of which has its weight <span class="arithmatex">\(m_i\)</span> and the weight it can carry on the top <span class="arithmatex">\(a_i\)</span>, determine the size of the largest tower one can build. </p>
-<p><strong>Step 1. Build a tower of all boxes.</strong> 
-In other words, we need to arrange the boxes in such a way that nothing breaks. Considering two distinct boxes, say <span class="arithmatex">\(i\)</span> and <span class="arithmatex">\(j\)</span>, we ask: when the order <span class="arithmatex">\((i,j)\)</span> is better than <span class="arithmatex">\((j,i)\)</span>? Obviously, that is when the excess of our carrying abilities is greater (that is when the total weight that we can additionally carry is greater). In other words, our cost function looks like this (here box <span class="arithmatex">\(j\)</span> stands on the top of <span class="arithmatex">\(i\)</span>): <span class="arithmatex">\(f(i, j) = \min(\)</span> total weight that can be still carried by box <span class="arithmatex">\(i\)</span>, total weight that can be still carried by <span class="arithmatex">\(j)\)</span>, i.e. <span class="arithmatex">\(f(i, j) = \min(a_i - m_j , a_j)\)</span>. Then we will build the tower in descending order of value.</p>
-<p><strong>Step 2. Build a max-size tower.</strong>
-Sort the boxes in the increasing order with respect to the comparator from Step 1. Take them greedily: if we can put the next box below the already built tower, we do it; otherwise, we ponder whether can we replace some of the boxes in the tower with our current one and decrease the weight the bottom box carries. </p>
-<h3 id="example-2-this-cses-problem">Example 2 (<a href="https://cses.fi/problemset/task/2426">this CSES problem</a>).</h3>
-<p>Given <span class="arithmatex">\(n\)</span> people and their programmer skill (<span class="arithmatex">\(skill_1\)</span>) and artistic skill (<span class="arithmatex">\(skill_2\)</span>). We need to take exactly <span class="arithmatex">\(a\)</span> programmers and <span class="arithmatex">\(b\)</span> artists. Maximise total skill. </p>
-<p><strong>Step 1. Take all people, at least <span class="arithmatex">\(a\)</span> programmers and at least <span class="arithmatex">\(b\)</span> artists.</strong> (<a href="https://www.eolymp.com/en/problems/182">this eolymp problem</a>)</p>
-<p>Applying to this problem, the cost (answer) of order <span class="arithmatex">\(AB\)</span> (take programmer skill of <span class="arithmatex">\(A\)</span> and artistique skill of <span class="arithmatex">\(B\)</span>) is <span class="arithmatex">\(skill_1(A) + skill_2(B)\)</span>, and the cost of order <span class="arithmatex">\(BA\)</span> (take the artistic skill of <span class="arithmatex">\(B\)</span> and programmer skill of <span class="arithmatex">\(A\)</span>) is <span class="arithmatex">\(skill_2(A) + skill_1(B)\)</span>. Then <span class="arithmatex">\(cost (AB) &gt; cost (BA)\)</span> is equivalent to <span class="arithmatex">\(skill_2(A) - skill_1(A) &lt; skill_2(B) - skill_1(A)\)</span> which we take as our comparator.</p>
-<p><strong>Step 2. Take exactly <span class="arithmatex">\(a\)</span> programmers and exactly <span class="arithmatex">\(b\)</span> artists.</strong></p>
-<p>Below we describe our implementation of the general strategy.</p>
-<p><strong>1.</strong> (*) Take a person with the best programmer skill (we shall replace bad choices later) and keep a set X containing values of penalty function (<span class="arithmatex">\(skill_2(A) - skill_1(A)\)</span>, as in Step 1) for these choices.</p>
-<p><strong>2.</strong> For other people, declare sets <span class="arithmatex">\(F\)</span> and <span class="arithmatex">\(S\)</span> that keep them sorted by the first (second) parameter. These sets will be used to make greedy steps further.</p>
-<p><strong>3.</strong> We take the best <span class="arithmatex">\(b\)</span> people, replacing previous choices with more optimal ones if needed. Take the object <span class="arithmatex">\(A\)</span> with the largest artistique skill. And we have two ways further</p>
-<ul>
-<li>(Greedy) <span class="arithmatex">\(\Delta_g\)</span> = the change of answer if we take <span class="arithmatex">\(A\)</span> (with the maximal <span class="arithmatex">\(y\)</span>) and do not change the previous element of the answer.</li>
-<li>(Replacing) <span class="arithmatex">\(\Delta_r\)</span>, = the change of answer if we take the maximal <span class="arithmatex">\(x\)</span> from the other people' and replace the worst (in terms of penalty) choice in (*).</li>
-</ul>
-<p><strong>4.</strong> Depending on which choice ("greedy" or "replacing) is better we change our sets.</p>
+<h3 id="prerequisites">Prerequisites.</h3>
+<p>Only very basic enumerative combinatorics.</p>
+<h3 id="short-description">Short description.</h3>
+<p>Some problems on labeled trees that does not involve much of internal structure can be reduced to the more straightforward problems on arrays. </p>
+<h3 id="general-description">General description.</h3>
+<p>Apart from other heavy methods of counting labeled structures (graphs, say) such as generating functions, there is a remarkably elementary method called Prüfer bijection.</p>
+<p>In short, this is well-behaved combinatorial construction that establish bijection:
+$$
+\Big{\text{labeled trees on <span class="arithmatex">\(\{1,\dots,n\}\)</span>}\Big} 
+\longleftrightarrow
+\Big{\text{arrays on <span class="arithmatex">\(\{1,\dots,n\}\)</span> of length <span class="arithmatex">\(n-2\)</span>}\Big}
+$$
+which is build explicitly using the algorithm described well <a href="https://cp-algorithms.com/graph/pruefer_code.html">here</a> as well as in many other Internet resources. Returning to the point, we reduce problem on trees to the problem on arbitrary sequences of fixed length. The rest now is just to note several useful properties, for example that every index, say <span class="arithmatex">\(v\)</span>, occurs <span class="arithmatex">\(\deg v-1\)</span> times, hence, for example, no leaves occur in the sequence. One more remarkable corollary from this bijection, so-called Cayley's formula, is the fact that the number of label trees on <span class="arithmatex">\(\{1,\dots,n\}\)</span> is equal to <span class="arithmatex">\(n^{n-2}\)</span>; if one proceed more carefully, the formula <span class="arithmatex">\(T_{n,k} = k n^{n-k-1}\)</span> for the number of labeled forests with <span class="arithmatex">\(k\)</span> connected components is easily derivable. </p>
+<p>In short, Prüfer codes gives a simple combinatorial way to control labeled trees (and forests), though mostly in terms of degrees of their vertices. </p>
+<h3 id="example-1">Example 1.</h3>
+<p>This is a bit artificial example, but it keeps everything simple and gives a clue how to solve such kind of problems.</p>
+<p>Find the number of labeled trees on <span class="arithmatex">\(\{1,\dots,N\}\)</span> such that the degrees of all vertices but leaves are equal.</p>
+<p>Consider arrays instead of trees. We know that the number of occurrences of a vertex <span class="arithmatex">\(v\)</span> is equal to <span class="arithmatex">\((\deg v - 1)\)</span>. So, in the array which encodes the proper tree we have the equal number of occurrences of each number. So, the combinatorial task now is rather easy:
+- choose <span class="arithmatex">\(d\)</span> numbers (where <span class="arithmatex">\(d\)</span> divides <span class="arithmatex">\(n-2\)</span>) from <span class="arithmatex">\(\{1,\dots,n\}\)</span> which will occur in the array.
+- find the number to put the selected numbers them into <span class="arithmatex">\((n-2)\)</span> cells, using multinomial coefficients. </p>
 <h3 id="online-judges">Online Judges</h3>
 <ol>
-<li><a href="https://www.eolymp.com/en/problems/4701">Коробки (Boxes)</a> (problem from Example 1, only Russian statement available)</li>
-<li><a href="https://www.eolymp.com/en/problems/9640">Dino and fetters</a></li>
-<li><a href="https://www.eolymp.com/en/problems/1591">Shoemaker Problem</a></li>
-<li><a href="https://www.eolymp.com/en/problems/2219">Snow White and n gnomes</a></li>
-<li><a href="https://www.eolymp.com/en/problems/4699">Приключение (Adventure)</a> (only Russian statement available) </li>
-<li><a href="https://codeforces.com/gym/104397/problem/A">Inverse Pairs of Binary Strings</a></li>
+<li><a href="https://cses.fi/problemset/task/2415/">Functional Graph Distribution</a> </li>
+<li><a href="https://codeforces.com/contest/1109/problem/D">Sasha and Interesting Fact from Graph Theory</a></li>
+<li><a href="https://codeforces.com/contest/1762/problem/E">Tree Sum</a></li>
+<li><a href="https://codeforces.com/contest/156/problem/D?locale=en">Clues</a></li>
 </ol>
 
 

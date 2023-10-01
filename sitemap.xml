@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cp-tricki.github.io/</loc>
-         <lastmod>2023-07-14</lastmod>
+         <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/Miscellaneous/one-can-process-bits-independently-when-relevant/</loc>
-         <lastmod>2023-07-14</lastmod>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cp-tricki.github.io/combinatorics/Counting%20labeled%20trees/</loc>
+         <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/dp/translate-dp-to-the-matrix-form/</loc>
-         <lastmod>2023-07-14</lastmod>
+         <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/greedy-strategies/how-to-come-up-with-a-comparator/</loc>
-         <lastmod>2023-07-14</lastmod>
+         <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
