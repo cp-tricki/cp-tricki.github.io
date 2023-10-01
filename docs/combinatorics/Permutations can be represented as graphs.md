@@ -13,7 +13,7 @@ No specific knowledge.
 ### General description
 
 Consider a permutation $p_1,p_2,\dots, p_n$. Let's construct an undirected graph where exist an edge between $i$ $\leftrightarrow$ $p_i$. In such construction this graph will contain only cycles (isolated vertex-loop, forward-backward edges or usual cycles).
-For example $[2,4,5,1,3]$ will split into $[{\textcolor{blue}{2}},{\textcolor{blue}{4}},{\textcolor{red}{5}},{\textcolor{blue}{1}},{\textcolor{red}{3}}]$.
+For example $[2,4,5,1,3]$ will split into $(2 4 1)(5 3)$.
 In problems, it may be efficient to consider each cycle independently.
 
 ### Example 1
