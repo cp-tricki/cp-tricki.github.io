@@ -5,7 +5,7 @@ title: About
 
 Welcome to CP-tricki! This is a collection of small tricks for competitive programming inspired by [Tricki](https://www.tricki.org/). You can browse (and, we hope, enjoy) available (currently only few) pages on the navbar. 
 
-![](kotek.jpg)
+![width=50%](kotek.jpg)
 
 ## Contributing
 To contribute, you can:
