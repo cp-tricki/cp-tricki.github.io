@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cp-tricki.github.io/dp/Use%20diagonals%20as%20parameters%20in%20grid%20DP%20problems/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cp-tricki.github.io/dp/translate-dp-to-the-matrix-form/</loc>
          <lastmod>2023-10-02</lastmod>
          <changefreq>daily</changefreq>
