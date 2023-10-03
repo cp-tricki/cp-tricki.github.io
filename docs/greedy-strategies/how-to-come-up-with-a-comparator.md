@@ -46,7 +46,7 @@ Given \(n\) people and their programmer skill (\(skill_1\)) and artistic skill (
 
 **Step 1. Take all people, at least \(a\) programmers and at least \(b\) artists.** ([this eolymp problem](https://www.eolymp.com/en/problems/182))
 
-Applying to this problem, the cost (answer) of order \(AB\) (take programmer skill of \(A\) and artistique skill of \(B\)) is \(skill_1(A) + skill_2(B)\), and the cost of order \(BA\) (take the artistic skill of \(B\) and programmer skill of \(A\)) is \(skill_2(A) + skill_1(B)\). Then \(cost (AB) > cost (BA)\) is equivalent to \(skill_2(A) - skill_1(A) < skill_2(B) - skill_1(A)\) which we take as our comparator.
+Applying to this problem, the cost (answer) of order \(AB\) (take programmer skill of \(A\) and artistique skill of \(B\)) is \(skill_1(A) + skill_2(B)\), and the cost of order \(BA\) (take the artistic skill of \(B\) and programmer skill of \(A\)) is \(skill_2(A) + skill_1(B)\). Then \(cost (AB) > cost (BA)\) is equivalent to \(skill_2(A) - skill_1(B) < skill_2(B) - skill_1(A)\) which we take as our comparator.
 
 **Step 2. Take exactly \(a\) programmers and exactly \(b\) artists.**
 
