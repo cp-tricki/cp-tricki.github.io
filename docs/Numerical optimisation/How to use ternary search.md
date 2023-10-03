@@ -33,7 +33,7 @@ In any way we need to intersect the line $y=a$. Let $(x,a)$ be a point on that l
 	\frac{\sqrt{(x-1)^2+a^2}}{v_2} 
 \]
 
-This function is clearly unimodal, hence we can use ternary search to find the optimal $x$. The generalisation of this problem can be solved using Lagrange multipliers. 
+This function is clearly unimodal, hence we can use ternary search to find the optimal $x$. A generalisation of this problem can be solved using [Lagrange multipliers](https://cp-tricki.github.io/Numerical%20optimisation/Lagrange%20multipliers%20can%20simplify%20tricky%20optimisation%20problems/#example-eolymp). 
 
 ### Example 2
 
