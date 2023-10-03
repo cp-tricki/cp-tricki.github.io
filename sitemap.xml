@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cp-tricki.github.io/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cp-tricki.github.io/Numerical%20optimisation/How%20to%20use%20ternary%20search/</loc>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/combinatorics/Counting%20labeled%20trees/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/combinatorics/One%20can%20process%20bits%20independently%20when%20relevant/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/combinatorics/One%20can%20use%20determinants%20to%20count%20lattice%20paths/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/combinatorics/Permutations%20can%20be%20represented%20as%20graphs/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/combinatorics/Small%20number%20of%20groups%20can%20be%20processed%20straightforwardly/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/dp/Use%20diagonals%20as%20parameters%20in%20grid%20DP%20problems/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/dp/translate-dp-to-the-matrix-form/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cp-tricki.github.io/greedy-strategies/how-to-come-up-with-a-comparator/</loc>
-         <lastmod>2023-10-02</lastmod>
+         <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
