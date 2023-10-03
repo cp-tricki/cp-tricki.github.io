@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cp-tricki.github.io/Numerical%20optimisation/Lagrange%20multipliers%20can%20simplify%20tricky%20optimisation%20problems/</loc>
+         <lastmod>2023-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cp-tricki.github.io/combinatorics/Counting%20labeled%20trees/</loc>
          <lastmod>2023-10-03</lastmod>
          <changefreq>daily</changefreq>
