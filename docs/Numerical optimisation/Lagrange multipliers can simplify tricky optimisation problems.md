@@ -54,6 +54,7 @@ and after some more calculations one obtains
 \]
 
 Put it back into constraint
+
 \[
 	g(Z_1,\dots,Z_n) = \lambda \sum_{1\leq i\leq n} \frac{v_ih_i}{\sqrt{1-\lambda^2v_i^2}}=Z.
 \]
